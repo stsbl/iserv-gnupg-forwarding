@@ -1,0 +1,40 @@
+Translations build:
+  stage: build
+  script:
+    - extract-translations
+    - deploy-translations
+    - build-translations
+  only:
+    - branches
+  artifacts:
+    paths:
+      - locale/
+
+Assets build:
+  stage: build
+  script:
+    - build-assets
+  only:
+    - branches
+  artifacts:
+    paths:
+      - public/
+
+Translations check:
+  stage: test
+  script:
+    - check-translations
+  only:
+    - branches
+  allow_failure: true
+
+Package:
+  stage: deploy
+  script:
+    - build-package
+  only:
+    - branches
+  artifacts:
+    paths:
+      - build/
+
