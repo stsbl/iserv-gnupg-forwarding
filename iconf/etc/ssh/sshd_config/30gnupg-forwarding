@@ -1,0 +1,4 @@
+# For GnuPG agent forwarding: Allow removal/replacing of dead GnuPG agent
+# sockets
+StreamLocalBindUnlink yes
+

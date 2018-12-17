@@ -1,0 +1,18 @@
+Source: iserv-gnupg-forwarding
+Section: misc
+Priority: extra
+Maintainer: IServ <info@iserv.eu>
+Build-Depends: debhelper (>= 10)
+Build-Depends-Indep: iserv3-dev
+Standards-Version: 4.2.1
+Homepage: https://iserv.eu/package/iserv-gnupg-forwarding
+
+Package: iserv-gnupg-forwarding
+Architecture: all
+Depends: ${misc:Depends},
+  ${perl:Depends},
+  libpam-systemd,
+Description: IServ GnuPG-Agent-Forwarding
+ Konfiguriert den Server für das simultane Forwarding des GnuPG-Agents durch
+ mehrere Fernwartungsbenutzer.
+Tag: suite::iserv
