@@ -1,5 +1,7 @@
 MkDir 0755 root:root /run/user-by-name
 MkDir 0000 root:root /run/user-by-name/gnupg
+MkDir 0700 root:root /run/user/0
+MkDir 0700 root:root /run/user/0/gnupg
 
 Insert /etc/pam.d/common-session
     "session         required        pam_namespace.so    create=0700,root,root"
