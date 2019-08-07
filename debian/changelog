@@ -1,3 +1,10 @@
+stsbl-iserv-gnupg-forwarding (19.08.07-2) unstable; urgency=medium
+
+  * Fixed maintainer
+  * Fixed registration of pam_systemd
+
+ -- Felix Jacobi <Felix@jacobi-hamburg.net>  Wed, 07 Aug 2019 06:29:28 +0200
+
 stsbl-iserv-gnupg-forwarding (19.08.07-1) unstable; urgency=medium
 
   * Create missing run user directory on demand
