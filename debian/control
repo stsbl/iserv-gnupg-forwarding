@@ -1,7 +1,7 @@
 Source: stsbl-iserv-gnupg-forwarding
 Section: misc
 Priority: optional
-Maintainer: IServ <info@iserv.eu>
+Maintainer: Stadtteilschule Blankenese <repository@stsbl.de>
 Build-Depends: debhelper (>= 10)
 Build-Depends-Indep: iserv3-dev
 Standards-Version: 4.3.0
