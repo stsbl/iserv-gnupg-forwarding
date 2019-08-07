@@ -4,6 +4,9 @@ MkDir 0700 root:root /run/user/0
 MkDir 0700 root:root /run/user/0/gnupg
 
 Insert /etc/pam.d/common-session
+    "session	optional	pam_systemd.so"
+
+Insert /etc/pam.d/common-session
     "session         required        pam_namespace.so    create=0700,root,root"
 
 Check /etc/security/namespace.conf
